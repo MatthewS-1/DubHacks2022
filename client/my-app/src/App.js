@@ -1,40 +1,46 @@
-import React from 'react';
 import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
+  Button, ChakraProvider, theme, Text
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
+import { getAnalytics } from "firebase/analytics";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAuth, GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
+import React, { useEffect } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAc38gz9cW9arpQDqzvvXUeDeqyfJePBaQ",
+  authDomain: "dubhacks2022.firebaseapp.com",
+  projectId: "dubhacks2022",
+  storageBucket: "dubhacks2022.appspot.com",
+  messagingSenderId: "166369939912",
+  appId: "1:166369939912:web:8a06ed08971ffd4ebbf0fd",
+  measurementId: "G-KR9LGWRDLV"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const provider = new GoogleAuthProvider();
+const auth = getAuth(app);
 
 function App() {
+  const [user] = useAuthState(auth);
+
+  useEffect(() => {
+    console.log(user)
+  }, [user]);
+
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
-          </VStack>
-        </Grid>
-      </Box>
+      <Button onClick={() => signInWithRedirect(auth, provider)}>
+        Google Sign In
+      </Button>
     </ChakraProvider>
   );
 }
