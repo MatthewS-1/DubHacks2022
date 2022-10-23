@@ -1,11 +1,8 @@
 import React from 'react';
 import Navbar from '../Navbar';
 
-function App() {
+export default function Account() {
     return(
-        <Navbar />
-        
+        <h>Hello</h>
     );
 }
-
-export default Account;

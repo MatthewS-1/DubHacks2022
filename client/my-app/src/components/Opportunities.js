@@ -18,8 +18,7 @@ export default function Opportunities(){
     
     return (
         <>
-            <Box left='50px' top='30px' position='fixed' fontSize='30px'>
-                <Navbar/>
+            <Box left='50px' top='60px' position='fixed' fontSize='30px'>
                 <h1>Opportunities Page</h1>
             </Box>
             <Accordion allowToggle width='600px' maxHeight='75%' marginLeft='70px' marginTop='150px' marginRight='none' position='fixed' overflowY='auto'>
