@@ -9,11 +9,13 @@ import {
     Box,
     Button,
     Image,
+    Alert,
   } from '@chakra-ui/react'
 import Navbar from "./Navbar"
 import "./Navbar.css"
 
 export default function Opportunities(){
+    
     return (
         <>
             <Box left='50px' top='30px' position='fixed' fontSize='30px'>
@@ -39,7 +41,8 @@ export default function Opportunities(){
                         Pictures:
                         <Box width='240px'><Image src="https://science.uct.ac.za/sites/default/files/content_migration/science_uct_ac_za/60/images/Litter.jpg"></Image></Box>
                         <br></br>
-                        Contact: (201)XXX-7016<br></br>
+                        Contact: (201)XXX-7016 <Button bgColor='green' height='75px' width='150px' borderRadius='20px' onClick={() => alert('You have successfully registered! Thank you!')}
+                                                position='relative' left='200px' color='white' fontSize='20px'>Register</Button>
                         <br></br>
                     </AccordionPanel>
                 </AccordionItem>
@@ -62,7 +65,8 @@ export default function Opportunities(){
                         Pictures:
                         <Box width='240px'><Image src="https://gamma.creativecirclecdn.com/messenger/medium/20201018-190308-trash-lake-hiawatha-300x225.jpg"></Image></Box>
                         <br></br>
-                        Contact: (206)XXX-9487<br></br>
+                        Contact: (206)XXX-9487<Button bgColor='green' height='75px' width='150px' borderRadius='20px' onClick={() => alert('You have successfully registered! Thank you!')}
+                                                position='relative' left='200px' color='white' fontSize='20px'>Register</Button>
                         <br></br>
                     </AccordionPanel>
                 </AccordionItem>
@@ -85,7 +89,8 @@ export default function Opportunities(){
                         Pictures:
                         <Box width='240px'><Image src="https://i0.wp.com/bkreader.com/wp-content/uploads/2020/08/3738821611_3a2c334f2f_c.jpg"></Image></Box>
                         <br></br>
-                        Contact: (905)XXX-4069<br></br>
+                        Contact: (905)XXX-4069<Button bgColor='green' height='75px' width='150px' borderRadius='20px' onClick={() => alert('You have successfully registered! Thank you!')}
+                                                position='relative' left='200px' color='white' fontSize='20px'>Register</Button>
                         <br></br>
                     </AccordionPanel>
                 </AccordionItem>
@@ -108,7 +113,8 @@ export default function Opportunities(){
                         Pictures:
                         <Box width='240px'><Image src="https://www.riverkeeper.org/wp-content/uploads/2016/07/egret-standing-in-trash-BronxRiver-crLeahRae-890x490-e1523974798506.jpg"></Image></Box>
                         <br></br>
-                        Contact: (650)XXX-1492<br></br>
+                        Contact: (650)XXX-1492<Button bgColor='green' height='75px' width='150px' borderRadius='20px' onClick={() => alert('You have successfully registered! Thank you!')}
+                                                position='relative' left='200px' color='white' fontSize='20px'>Register</Button>
                         <br></br>
                     </AccordionPanel>
                 </AccordionItem>
