@@ -15,21 +15,21 @@ import Navbar from "./Navbar"
 export default function Opportunities(){
     return (
         <>
-            <Box left='50px' top='30px' position='fixed' fontSize={30}>
+            <Box left='50px' top='30px' position='fixed' fontSize='30px'>
                 <h1>Opportunities Page</h1>
             </Box>
-            <Accordion allowToggle width={600} marginLeft={10} marginTop={100} marginRight='none' position='fixed'>
+            <Accordion allowToggle width='600px' maxHeight='75%' marginLeft='70px' marginTop='150px' marginRight='none' position='fixed' overflowY='auto'>
                 <AccordionItem>
                     <h2>
-                        <AccordionButton height={24} _expanded={{bg: 'green', color: 'white'}}>
-                            <Box flex='1' textAlign='left'>
+                        <AccordionButton height='80px' _expanded={{bg: 'green', color: 'white'}}>
+                            <Box flex='1' textAlign='left' fontSize='22px'>
                                 Toms River Clean-Up
                             </Box>
                             <AccordionIcon />
                         </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4}>
-                        Organization: <br></br>
+                        Organization: Clean Rivers<br></br>
                         <br></br>
                         Event Details: Last time this area was cleaned was 05/20/2020.<br></br>
                         Trash like plastic bottles and bags are seen, so a clean up is needed.<br></br>
@@ -44,8 +44,8 @@ export default function Opportunities(){
 
                 <AccordionItem>
                     <h2>
-                        <AccordionButton height={24}>
-                            <Box flex='1' textAlign='left'>
+                        <AccordionButton height='80px' _expanded={{bg: 'green', color: 'white'}}>
+                            <Box flex='1' textAlign='left' fontSize='22px'>
                                 Yonder Lake
                             </Box>
                             <AccordionIcon />
@@ -65,8 +65,8 @@ export default function Opportunities(){
 
                 <AccordionItem>
                     <h2>
-                        <AccordionButton height={24}>
-                            <Box flex='1' textAlign='left'>
+                        <AccordionButton height='80px' _expanded={{bg: 'green', color: 'white'}}>
+                            <Box flex='1' textAlign='left' fontSize='22px'>
                                 Totem Park
                             </Box>
                             <AccordionIcon />
@@ -86,8 +86,8 @@ export default function Opportunities(){
 
                 <AccordionItem>
                     <h2>
-                        <AccordionButton height={24}>
-                            <Box flex='1' textAlign='left'>
+                        <AccordionButton height='80px' _expanded={{bg: 'green', color: 'white'}}>
+                            <Box flex='1' textAlign='left' fontSize='22px'>
                                 Jester River
                             </Box>
                             <AccordionIcon />
