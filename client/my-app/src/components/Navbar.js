@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { PureComponent} from 'react';
 import styles from './Navbar.css';
-import logo from './assets/earthbound-cleaning-logo.png';
-import React, { PureComponent } from 'react';
+import logo from '../assets/earthbound-cleaning-logo.png';
+import {
+  Container,
+} from '@chakra-ui/react'
 
 function Navbar(props) {
 
