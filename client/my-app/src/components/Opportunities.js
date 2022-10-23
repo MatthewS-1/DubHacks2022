@@ -1,4 +1,5 @@
 import React, {useRef} from "react"
+<<<<<<< HEAD
 import {
     Component,
     Accordion,
@@ -12,6 +13,10 @@ import {
   } from '@chakra-ui/react'
 import Navbar from "./Navbar"
 import "./Navbar.css"
+=======
+import { Button } from "@chakra-ui/react";
+import Navbar from "./Navbar"
+>>>>>>> 9f9deef (ff)
 
 export default function Opportunities(){
     return (
