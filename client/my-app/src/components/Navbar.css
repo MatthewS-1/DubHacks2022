@@ -2,13 +2,7 @@
 body {
     margin: 0;
   } 
-  .a:visited {
-    text-decoration: none;
-}
   
-.p {
-    margin-top: 25px;
-}
 
 .EBC {
   font-size: 1.25rem;
@@ -35,7 +29,7 @@ body {
 .nav a {
     color: inherit;
     text-decoration: none;
-    font-size: 5.5mm;
+    font-size: 7.5mm;
     height: 100%;
     display: stretch;
     align-items: center;
