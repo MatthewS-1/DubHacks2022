@@ -11,11 +11,13 @@ import {
     Image,
   } from '@chakra-ui/react'
 import Navbar from "./Navbar"
+import "./Navbar.css"
 
 export default function Opportunities(){
     return (
         <>
             <Box left='50px' top='30px' position='fixed' fontSize='30px'>
+                <Navbar/>
                 <h1>Opportunities Page</h1>
             </Box>
             <Accordion allowToggle width='600px' maxHeight='75%' marginLeft='70px' marginTop='150px' marginRight='none' position='fixed' overflowY='auto'>
