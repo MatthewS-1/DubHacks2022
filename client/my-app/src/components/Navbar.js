@@ -21,7 +21,7 @@ function Navbar(props) {
       
 
       <Container>
-        
+        <p>About</p>
         
         
       </Container>
