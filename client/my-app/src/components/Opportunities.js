@@ -10,6 +10,7 @@ import {
     Button,
     Image,
   } from '@chakra-ui/react'
+import Navbar from "./Navbar"
 
 export default function Opportunities(){
     return (
