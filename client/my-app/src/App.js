@@ -8,6 +8,9 @@ import {
   ModalCloseButton,
   Image
 } from '@chakra-ui/react';
+import About from './components/pages/About';
+import Contact from './components/pages/Contact';
+import Account from './components/pages/Account';
 import logo from './assets/earthbound-cleaning-logo.png'
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
@@ -31,6 +34,22 @@ const provider = new GoogleAuthProvider();
 const auth = getAuth(app);
 
 function App() {
+  let CurrComponent;
+  switch(window.location.pathname){
+    case "/":
+      CurrComponent = <Opportunities/>;
+      break
+    case "/about":
+      CurrComponent = <About/>;
+      break
+    case "/contact":
+      CurrComponent = <Contact/>;
+      break
+    case "/Account":
+      CurrComponent = <Account/>
+
+  }
+
   const [user, loading, error] = useAuthState(auth);
   const {isOpen, onOpen, onClose} = useDisclosure()
 
@@ -66,7 +85,10 @@ function App() {
           </ModalContent>
         </Modal>
         :
-        <Opportunities/>
+        <>
+        <Navbar/>
+        {CurrComponent}
+        </>
       }
     </ChakraProvider>
   );
