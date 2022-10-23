@@ -27,7 +27,7 @@ export default function Opportunities(){
                     <h2>
                         <AccordionButton height='80px' _expanded={{bg: 'green', color: 'white'}}>
                             <Box flex='1' textAlign='left' fontSize='22px'>
-                                Toms River Clean-Up
+                                Huddy Park, Toms River
                             </Box>
                             <AccordionIcon />
                         </AccordionButton>
@@ -36,7 +36,7 @@ export default function Opportunities(){
                         Organization: Clean Rivers<br></br>
                         <br></br>
                         Event Details: Last time this area was cleaned was 05/20/2020.<br></br>
-                        Trash like plastic bottles and bags are seen near shores in th south, clean up is needed.<br></br>
+                        Trash like plastic bottles and bags are seen near shores in the south, clean up is needed.<br></br>
                         <br></br>
                         Pictures:
                         <Box width='240px'><Image src="https://science.uct.ac.za/sites/default/files/content_migration/science_uct_ac_za/60/images/Litter.jpg"></Image></Box>
