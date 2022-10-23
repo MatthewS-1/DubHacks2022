@@ -14,6 +14,7 @@ import { getAuth, GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
 import React, { useEffect } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import Opportunities from './components/Opportunities';
+import Navbar from './components/Navbar';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAc38gz9cW9arpQDqzvvXUeDeqyfJePBaQ",
