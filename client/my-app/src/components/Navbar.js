@@ -1,32 +1,18 @@
-import React from 'react';
-import styles from './Navbar.css';
-import logo from './assets/earthbound-cleaning-logo.png';
-import React, { PureComponent } from 'react';
 
-function Navbar(props) {
+import './Navbar.css';
 
-    return ( <nav className = "EarthBoundCleaning">
-      <a href = "/" clasName = "EBC">EarthBoundCleaning</a>
-      <ul>
-        <li>
-        <a href = "/Account">Account</a>
-        </li>
-        <li>
-        <a href = "/About">About</a>
-        </li>
-        <li>
-        <a href = "Contact">Contact</a>
-        </li>
+export default function Navbar() {
+    return <nav className = 'nav'>
+      <a href = "/" className = "EBC">EarthBoundCleaning </a>
+      <ul className = 'active'>
+        <a href = 'about'>About</a>
       </ul>
-      
-
-      <Container>
-        
-        
-        
-      </Container>
+         
+      <ul classhName = 'active'>
+      <a href = 'Contact'>Contact</a> 
+        </ul>    
+        <ul>
+        <a href = "Account">Account</a>
+        </ul>
       </nav>
-    );
-}
-
-export default Navbar;
+  }  
