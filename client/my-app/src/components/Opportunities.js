@@ -20,7 +20,7 @@ export default function Opportunities(){
             <Accordion allowToggle width={600} marginLeft={10} marginTop={100} marginRight='none' position='fixed'>
                 <AccordionItem>
                     <h2>
-                        <AccordionButton height={24}>
+                        <AccordionButton height={24} _expanded={{bg: 'green', color: 'white'}}>
                             <Box flex='1' textAlign='left'>
                                 Toms River Clean-Up
                             </Box>
@@ -28,10 +28,16 @@ export default function Opportunities(){
                         </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
+                        Organization: <br></br>
+                        <br></br>
+                        Event Details: Last time this area was cleaned was 05/20/2020.<br></br>
+                        Trash like plastic bottles and bags are seen, so a clean up is needed.<br></br>
+                        <br></br>
+                        Pictures:
+                        <Box width='200px'><Image src="https://science.uct.ac.za/sites/default/files/content_migration/science_uct_ac_za/60/images/Litter.jpg"></Image></Box>
+                        <br></br>
+                        Contact: (201)948-7016<br></br>
+                        <br></br>
                     </AccordionPanel>
                 </AccordionItem>
 
@@ -39,16 +45,20 @@ export default function Opportunities(){
                     <h2>
                         <AccordionButton height={24}>
                             <Box flex='1' textAlign='left'>
-                                Section 2 title
+                                Yonder Lake
                             </Box>
                             <AccordionIcon />
                         </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
+                        Organization: <br></br>
+                        <br></br>
+                        Event Details: <br></br>
+                        <br></br>
+                        Pictures:<br></br>
+                        <br></br>
+                        Contact:<br></br>
+                        <br></br>
                     </AccordionPanel>
                 </AccordionItem>
 
@@ -56,16 +66,20 @@ export default function Opportunities(){
                     <h2>
                         <AccordionButton height={24}>
                             <Box flex='1' textAlign='left'>
-                                Section 3 title
+                                Totem Park
                             </Box>
                             <AccordionIcon />
                         </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
+                        Organization: <br></br>
+                        <br></br>
+                        Event Details: <br></br>
+                        <br></br>
+                        Pictures:<br></br>
+                        <br></br>
+                        Contact:<br></br>
+                        <br></br>
                     </AccordionPanel>
                 </AccordionItem>
 
@@ -73,16 +87,20 @@ export default function Opportunities(){
                     <h2>
                         <AccordionButton height={24}>
                             <Box flex='1' textAlign='left'>
-                                Section 4 title
+                                Jester River
                             </Box>
                             <AccordionIcon />
                         </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
+                        Organization: <br></br>
+                        <br></br>
+                        Event Details: <br></br>
+                        <br></br>
+                        Pictures:<br></br>
+                        <br></br>
+                        Contact:<br></br>
+                        <br></br>
                     </AccordionPanel>
                 </AccordionItem>
             </Accordion>
