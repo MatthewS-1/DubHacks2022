@@ -4,7 +4,6 @@ import logo from './clean.png'
 export default function Navbar() {
     return <nav className = 'nav'>
       <a href = "/" className = "EBC">EarthBoundCleaning 
-      <img src = {logo} alt = ''> </img>
       </a>
       <ul className = 'active'>
         <a href = 'about'>About</a>

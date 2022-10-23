@@ -15,13 +15,12 @@ import Navbar from "./Navbar"
 import "./Navbar.css"
 
 export default function Opportunities(){
-    
     return (
         <>
-            <Box left='50px' top='60px' position='fixed' fontSize='30px'>
+            <Box left='50px' top='100px' position='fixed' fontSize='30px'>
                 <h1>Opportunities Page</h1>
             </Box>
-            <Accordion allowToggle width='600px' maxHeight='75%' marginLeft='70px' marginTop='150px' marginRight='none' position='fixed' overflowY='auto'>
+            <Accordion allowToggle width='600px' maxHeight='75%' marginLeft='70px' marginTop='110px' marginRight='none' position='fixed' overflowY='auto'>
                 <AccordionItem>
                     <h2>
                         <AccordionButton height='80px' _expanded={{bg: 'green', color: 'white'}}>
